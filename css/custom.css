@@ -12,9 +12,6 @@ margin: auto;
 width: 60%;
 }
 
-.container.marketing{
-padding-top: 50px;
-}
 .navbar-inverse .navbar-nav > li > a{
 color: white;
 }
@@ -38,10 +35,17 @@ border-color:white;
 }*/
 
 #carouselButtons {
-    margin-left: 100px;
-    position: absolute;
+    margin: auto;
+    width: 60%;
+    text-align:center;
+    padding-top: 10px;
+}
+
+#innerCarousel {
+    margin: auto;
+    width: 60%;
     bottom: 0px;
-    box-shadow: 0 0 1em 1em #ccc;
+    border: 3px solid #73AD21;
 }
 
 .container > .logo > img,
@@ -59,6 +63,13 @@ border-color:white;
 color: white;
 }
 
-.marketing{
+.container.marketing{
     color:black;
+    padding-top: 100px;
+}
+
+.container-inner{
+    margin: auto;
+    width: 70%;
+    background: url(../images/texture2.png) repeat 0 0;
 }
