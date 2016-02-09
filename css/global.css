@@ -1,0 +1,102 @@
+/* Setting font for all text */
+p, div, h1, h2, h3, h4, h5, h6{
+    font-family: 'Corben', Helvetica, Arial, sans-serif;
+/*    text-shadow: 1px 1px 1px #ccc;*/
+}
+
+/* Changing text and background color upon hover */
+.navbar-inverse .navbar-nav > .active > a:hover, 
+.navbar-inverse .navbar-nav > li > .active > a:hover,
+.navbar-inverse .navbar-nav > li > a:hover{
+    color: black;
+    background-color: white;  
+}
+
+/* Setting for the small shuttlecock picture */
+.navbar-header > img{
+    padding-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 3em;
+    width: 3em;
+}
+
+.navbar-inverse .navbar-nav > li > a,
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-header a.navbar-brand,
+.navbar-header a.navbar-brand:hover{
+    color: white;
+}
+
+#main-content{
+    margin: auto;
+    width: 70%;
+    max-width: 888.88px;
+    padding-left: 0px;
+    padding-right: 0px;
+    background: url(../images/texture2.png) repeat 0 0;
+    height: 100%;
+}
+
+#wrapper{
+    margin-top: 50px;
+    height: 100%;
+}
+
+.navbar-nav i{
+    margin-right: 5px;
+}
+
+@media (max-width: 400px)
+{
+    .navbar-header > img{
+        padding-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        height: 0px;
+        width: 0px;
+    }
+    
+    #wrapper{
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 348px)
+{
+    #wrapper{
+        margin-top: 100px;
+    }
+}
+
+@media (min-width: 349px) and (max-width: 767px)
+{
+    #wrapper{
+        margin-top: 50px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px)
+{    
+    #wrapper{
+        margin-top: 100px;
+    }
+}
+@media (min-width: 992px)
+{
+    #wrapper{
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 888px){
+    #main-content{
+        width: 100%;
+    }
+}
+
+
+
+
+

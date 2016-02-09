@@ -1,0 +1,30 @@
+p, li{
+    font-size: medium;
+}
+
+#googlemap{
+    height: 300px;
+    margin: auto;
+    width: 60%;
+}
+
+#text-content{
+    margin-left: 30px;
+}
+
+#text-content h1{
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+h3{
+    margin-top: 30px;
+    text-decoration: underline;
+}
+
+#credit{
+    font-size:small;
+    font-style: italic;
+    text-align: center;
+}
+

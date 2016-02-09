@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Club de badminton de gatineau</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/carousel.css" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" >
+        <link href="http://fonts.googleapis.com/css?family=Corben" rel="stylesheet">
+        <link rel="icon" href="images/Badminton_Logo.ico">
+        <link href="css/global.css" rel="stylesheet">
+        <link href="css/accueil.css" rel="stylesheet">
+
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+        <script>
+            $(function () {
+                $("#topmenu").load("topmenu.html");
+            });
+        </script>
+    </head>
+
+    <!-- NAVBAR -->
+    <body>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery.backstretch.min.js"></script>
+        <script>
+                    $.backstretch("images/Badminton_Action.jpg");
+        </script>
+
+
+        <div id="topmenu"></div>
+
+        <div id='wrapper'>
+            <div class='container' id='main-content'>
+                <!-- Carousel -->
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!--       Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <div class="slider-size">
+                                <img src="images/Badminton_Stub3.jpg"/>
+                            </div>
+                            <div class="container">
+                                <div class="carousel-caption" id="slide1">
+                                    <h3>Un club dynamique</h3>
+                                    <p><a class="btn btn-lg btn-primary" href="devenirmembre.html" role="button">Devenir membre</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="slider-size">
+                                <img src="images/Tableau.jpg"/>
+                            </div>
+                            <div class="container">
+                                <div class="carousel-caption" id="slide2">
+                                    <h3>De tous les niveaux</h3>
+                                    <p><a class="btn btn-lg btn-primary" href="devenirmembre.html" role="button">Devenir membre</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item">
+                                <div class="slider-size">
+                                    <img src="images/Groupe.jpg"/>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="carousel-caption" id="slide3">
+                                    <h3>Une ambiance chaleureuse</h3>
+                                    <p><a class="btn btn-lg btn-primary" href="devenirmembre.html" role="button">Devenir membre</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+
+                <!-- Marketing messaging and featurettes -->
+
+                <div class="container marketing">
+                    <h1>Évènements à venir</h1>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <img class="img-circle" src="images/Tournoi_Image.jpg" alt="Tournoi" width="140" height="140">
+                            <h2>Tournois ABC - Étape 7</h2>
+                            <p>L’étape #7 du tournois ABC de badminton Québec du 26-28 février 2016 (l'inscription de chaque joueur à la banque de données de badminton Québec doit être fait au plus tard le 18 février)>               
+                                <a href="www.Badmintonquebec.com">www.Badmintonquebec.com</a>
+                            </p>
+                        </div>
+                        <div class="col-lg-4">
+                            <img class="img-circle" src="images/Tournoi_Image2.jpg" alt="Generic placeholder image" width="140" height="140">
+                            <h2>Tournoi en équipe</h2>
+                            <p>Tournoi en équipe du Club de Hull au centre sportif de Gatineau le samedi 12 mars.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--     Bootstrap core JavaScript
+        ================================================== 
+         Placed at the end of the document so the pages load faster -->
+        <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/carouselPlayPause.js"></script>
+        <!-- Script to Activate the Carousel -->
+        <script>
+            $('.carousel').carousel({
+                interval: 6000 //changes the speed
+            })
+        </script>
+    </body>
+</html>
