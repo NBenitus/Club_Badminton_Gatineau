@@ -2,6 +2,10 @@ body{
     padding-bottom: 0px;
 }
 
+h1{
+    margin-top: 40px;
+}
+
 #slide1{
     color:orange;
     text-shadow: 2px 2px 2px black;
@@ -16,6 +20,7 @@ body{
 /* Carousel properties */
 .carousel{
     margin: 0 auto;
+    margin-top: 50px;
     height: auto;
     width: 100%;
     min-width: 300px;
@@ -33,10 +38,28 @@ body{
 /* Set text color in future events section */
 .container.marketing{
     color:black;
+    margin-left: 30px;
+    width: 100%;
 }
 
 .container.marketing > h1{
     margin-bottom: 30px;
+}
+
+@media (max-width: 415px)
+{
+    .navbar-header > img{
+        padding-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        height: 0px;
+        width: 0px;
+    }
+
+    .extruded{
+        margin-top: 30px;
+        font-size: 32px;
+    }
 }
 
 @media (max-width: 600px)
@@ -51,3 +74,29 @@ body{
     }
 }
 
+@media (max-width: 348px)
+{
+    .carousel{
+        margin-top: 100px;
+    }
+}
+
+@media (min-width: 349px) and (max-width: 767px)
+{
+    .carousel{
+        margin-top: 50px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px)
+{    
+    .carousel{
+        margin-top: 100px;
+    }
+}
+@media (min-width: 992px)
+{
+    .carousel{
+        margin-top: 50px;
+    }
+}
