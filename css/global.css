@@ -15,7 +15,7 @@ h1{
 /*    color: red;*/
    -webkit-text-fill-color: black; /* Will override color (regardless of order) */
    -webkit-text-stroke-width: 1px;
-   -webkit-text-stroke-color: purple;
+   -webkit-text-stroke-color: black;
 }
 
 /*.extruded {
