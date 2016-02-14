@@ -6,11 +6,7 @@ h1{
     margin-top: 40px;
 }
 
-#slide1{
-    color:orange;
-    text-shadow: 2px 2px 2px black;
-}
-
+#slide1,
 #slide2,
 #slide3{
     color:yellow;
@@ -20,7 +16,6 @@ h1{
 /* Carousel properties */
 .carousel{
     margin: 0 auto;
-    margin-top: 50px;
     height: auto;
     width: 100%;
     min-width: 300px;
@@ -66,40 +61,5 @@ h1{
         margin-right: 0px;
         height: 0px;
         width: 0px;
-    }
-}
-
-@media (max-width: 398px)
-{
-    .carousel{ 
-        margin-top: 100px;
-    }
-}
-
-@media (min-width: 365px) and (max-width: 398px)
-{
-    :lang(en) .carousel{ 
-            margin-top: 50px;
-        }
-}
-
-@media (min-width: 399px) and (max-width: 767px)
-{
-    .carousel{ 
-        margin-top: 50px;
-    }
-}
-
-
-@media (min-width: 768px) and (max-width: 991px)
-{    
-    .carousel{
-        margin-top: 100px;
-    }
-}
-@media (min-width: 992px)
-{
-    .carousel{
-        margin-top: 50px;
     }
 }

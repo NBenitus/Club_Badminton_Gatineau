@@ -24,3 +24,10 @@ td{
         margin-left: 20px;
     }
 }
+
+@media (min-height: 320px)
+{
+    body{
+        overflow-y:hidden;
+    }
+}

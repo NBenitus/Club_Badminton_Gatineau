@@ -44,8 +44,9 @@ td{
 @media (max-width: 600px)
 {
     #googlemap{
-        height: 200px;
+        height: 225px;
         margin: auto;
         width: 80%;
+        margin-top: 25px;
     }
 }
