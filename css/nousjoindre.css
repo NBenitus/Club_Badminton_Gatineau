@@ -18,6 +18,10 @@ td{
     padding-bottom: 8px;
 }
 
+table{
+    margin-top: 45px;
+}
+
 @media (max-width: 650px)
 {
     #text-content{
