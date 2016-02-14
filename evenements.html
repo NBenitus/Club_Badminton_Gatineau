@@ -1,16 +1,17 @@
-<html lang="fr">
+<html>
     <head>
         <title>Club de badminton de gatineau</title>
-        
+
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" >
         <link href="http://fonts.googleapis.com/css?family=Corben" rel="stylesheet">
-        <link rel="icon" href="images/Badminton_Logo.ico">
         <link href="css/global.css" rel="stylesheet">
         <link href="css/evenements.css" rel="stylesheet">
+
+        <link rel="icon" href="images/Badminton_Logo.ico">
 
         <script src="//code.jquery.com/jquery-1.10.2.js"></script>
         <script>
@@ -18,8 +19,11 @@
                 $("#topmenu").load("topmenu.html");
             });
         </script>
+        <script src="js/selectlanguage.js"></script>
+        <script src="js/changePage.js" type="text/javascript"></script>
+        <script src="js/getCurrentPageName.js" type="text/javascript"></script>
     </head>
-    <body onload="select_language('fr')">
+    <body onload="select_language('fr');">
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script type="text/javascript" src="js/jquery.backstretch.min.js"></script>
         <script>
@@ -27,24 +31,44 @@
         </script>
 
         <div id="topmenu"></div>
-        
+
         <div id='wrapper'>
             <div class='container' id='main-content'>
                 <div class="container marketing">
-                    <h1 class='extruded'>Évènements</h1>
-                    <h2>À venir</h2>
-                    <div class="row">
-                        <div class="col-lg-4">
-                            <img class="img-circle" src="images/Tournoi_Image.jpg" alt="Tournoi" width="140" height="140">
-                            <h3>Tournois ABC - Étape 7</h3>
-                            <p>L’étape #7 du tournois ABC de badminton Québec du 26-28 février 2016 (l'inscription de chaque joueur à la banque de données de badminton Québec doit être fait au plus tard le 18 février).              
-                                <a href="www.Badmintonquebec.com">www.Badmintonquebec.com</a>
-                            </p>
+                    <div lang="fr">
+                        <h1>Évènements</h1>
+                        <h2>À venir</h2>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <img class="img-circle" src="images/Tournoi_Image.jpg" alt="Tournoi" width="140" height="140">
+                                <h3>Tournois ABC - Étape 7</h3>
+                                <p>L’étape #7 du tournois ABC de badminton Québec du 26-28 février 2016 (l'inscription de chaque joueur à la banque de données de badminton Québec doit être fait au plus tard le 18 février).              
+                                    <a href="www.Badmintonquebec.com">www.Badmintonquebec.com</a>
+                                </p>
+                            </div>
+                            <div class="col-lg-4">
+                                <img class="img-circle" src="images/Tournoi_Image2.jpg" alt="Generic placeholder image" width="140" height="140">
+                                <h3>Tournoi en équipe</h3>
+                                <p>Tournoi en équipe du Club de Hull au centre sportif de Gatineau le samedi 12 mars.</p>
+                            </div>
                         </div>
-                        <div class="col-lg-4">
-                            <img class="img-circle" src="images/Tournoi_Image2.jpg" alt="Generic placeholder image" width="140" height="140">
-                            <h3>Tournoi en équipe</h3>
-                            <p>Tournoi en équipe du Club de Hull au centre sportif de Gatineau le samedi 12 mars.</p>
+                    </div>
+                    <div lang="en">
+                        <h1>Events</h1>
+                        <h2>Coming soon</h2>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <img class="img-circle" src="images/Tournoi_Image.jpg" alt="Tournoi" width="140" height="140">
+                                <h3>ABC Tournaments - 7th Step</h3>
+                                <p>The 7th step of ABC Tournaments of Badminton Québec from February 26th-28th 2016 (each player must register to badminton Quebec's database befoe February 18th).               
+                                    <a href="www.Badmintonquebec.com">www.Badmintonquebec.com</a>
+                                </p>
+                            </div>
+                            <div class="col-lg-4">
+                                <img class="img-circle" src="images/Tournoi_Image2.jpg" alt="Generic placeholder image" width="140" height="140">
+                                <h3>Teams tournament</h3>
+                                <p>The teams tournament from Hull's club at Gatineau's sports center Saturday March 12th</p>
+                            </div>
                         </div>
                     </div>
 
@@ -53,9 +77,10 @@
                     <h2>Archives</h2>
                     <div class="row featurette">
                         <div class="col-md-7">
-                            <h3 class="featurette-heading">Tournois ABC - Étape 7.</h3>
-                            <p class="lead">L’étape #7 du tournois ABC de badminton Québec du 26-28 février 2016 (l'inscription de chaque joueur à la banque de données de badminton Québec doit être fait au plus tard le 18 février).               
-                                <a href="www.Badmintonquebec.com">www.Badmintonquebec.com</a></p>
+                            <h3 class="featurette-heading">ABC Tournaments - 7th Step</h3>
+                                <p>The 7th step of ABC Tournaments of Badminton Québec from February 26th-28th 2016 (each player must register to badminton Quebec's database befoe February 18th).               
+                                    <a href="www.Badmintonquebec.com">www.Badmintonquebec.com</a>
+                                </p>
                         </div>
                         <div class="col-md-5">
                             <img class="featurette-image img-responsive center-block" src="images/Tournoi_Image.jpg" alt="Generic placeholder image">
@@ -66,17 +91,19 @@
 
                     <div class="row featurette">
                         <div class="col-md-7 col-md-push-5">
-                            <h3 class="featurette-heading">Tournoi en équipe.</h3>
-                            <p class="lead">Tournoi en équipe du Club de Hull au centre sportif de Gatineau le samedi 12 mars.</p>
+                            <h3 class="featurette-heading">Teams tournament</h3>
+                            <p>The teams tournament from Hull's club at Gatineau's sports center Saturday March 12th</p>
                         </div>
                         <div class="col-md-5 col-md-pull-7">
                             <img class="featurette-image img-responsive center-block" src="images/Tournoi_Image2.jpg" alt="Generic placeholder image">
                         </div>
                     </div>
+
+                    <hr class="featurette-divider">
                 </div>
             </div>
         </div>
-        
+
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
     </body>
 </html>

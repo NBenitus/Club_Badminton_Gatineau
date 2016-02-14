@@ -1,4 +1,9 @@
+#wrapper{
+    height: 100%;
+}
+
 select{
+    margin-left: 15px;
     margin-top: 10px;
 }
 
@@ -11,32 +16,12 @@ p, div, h1, h2, h3, h4, h5, h6{
 h1{
     margin-top: 80px;
     margin-bottom: 30px;
-    
-/*    color: red;*/
-   -webkit-text-fill-color: black; /* Will override color (regardless of order) */
-   -webkit-text-stroke-width: 1px;
-   -webkit-text-stroke-color: black;
-}
 
-/*.extruded {
-    color: #888;
-    font-family: proxima-nova-1, proxima-nova-2, 'Helvetica Neue', Arial, sans-serif;  the original site doesn't use the @font-face attribute 
-    font-size: 48px;
-    font-weight: bold;
-    text-shadow: #000 1px 1px, #000 2px 2px, #000 3px 3px;
-    position: relative;
-    -moz-transition: all 0.3s ease-out;  FF3.7+ 
-       -o-transition: all 0.3s ease-out;  Opera 10.5 
-  -webkit-transition: all 0.3s ease-out;  Saf3.2+, Chrome 
-          transition: all 0.3s ease-out;
+    /*    color: red;*/
+    -webkit-text-fill-color: black; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
-
-.extruded:hover {
-    color: red;
-    text-shadow: #58E 1px 1px, black 2px 2px, black 3px 3px, #58E 4px 4px, black 5px 5px, black 6px 6px;
-    left: -6px;
-    top: -6px;
-}*/
 
 /* Changing text and background color upon hover */
 .navbar-inverse .navbar-nav > .active > a:hover, 
@@ -69,35 +54,23 @@ h1{
     max-width: 888.88px;
     padding-left: 0px;
     padding-right: 0px;
+    height: auto;
     background: url(../images/texture2.png) repeat 0 0;
-/*    height: 100%;*/
-}
 
-#wrapper{
-    height: 100%;
 }
 
 .navbar-nav i{
     margin-right: 5px;
 }
 
-@media (max-width: 415px)
+@media (min-width: 365px) and (max-width: 398px)
 {
-    .navbar-header > img{
-        padding-top: 0px;
-        margin-left: 0px;
-        margin-right: 0px;
-        height: 0px;
-        width: 0px;
-    }
-
-    .extruded{
-/*        margin-top: 60px;*/
-        font-size: 32px;
-    }
+    .navbar-brand.en{
+        padding-right: 49px;
+    }    
 }
 
-@media (max-width: 435px)
+@media (max-width: 465px)
 {
     .navbar-header > img{
         padding-top: 0px;
@@ -105,11 +78,6 @@ h1{
         margin-right: 0px;
         height: 0px;
         width: 0px;
-    }
-
-    .extruded{
-/*        margin-top: 60px;*/
-        font-size: 32px;
     }
 }
 
@@ -121,7 +89,14 @@ h1{
     }
 }
 
-@media (min-width: 349px) and (max-width: 767px)
+@media (max-width: 398px)
+{
+    h1{
+        margin-top: 130px;
+    }
+}
+
+@media (min-width: 399px) and (max-width: 767px)
 {
     h1{
         margin-top: 80px;
@@ -147,10 +122,12 @@ h1{
     }
 }
 
-
-
-
-
-
-
-
+/*@supports (-ms-accelerator:true) {
+  .navbar-header > img{
+        padding-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        height: 0px;
+        width: 0px;
+    }
+}*/

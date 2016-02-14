@@ -2,9 +2,15 @@ p, li{
     font-size: medium;
 }
 
+#main-content{
+    min-height: 100%;
+    height: auto;
+}
+
 #googlemap{
     height: 300px;
     margin: auto;
+    margin-top: 25px;
     width: 60%;
 }
 

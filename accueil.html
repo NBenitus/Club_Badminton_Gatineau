@@ -1,16 +1,19 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html>
     <head>
         <title>Club de badminton de gatineau</title>
+
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/carousel.css" rel="stylesheet">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" >
         <link href="http://fonts.googleapis.com/css?family=Corben" rel="stylesheet">
-        <link rel="icon" href="images/Badminton_Logo.ico">
         <link href="css/global.css" rel="stylesheet">
         <link href="css/accueil.css" rel="stylesheet">
+
+        <link rel="icon" href="images/Badminton_Logo.ico">
 
         <script src="//code.jquery.com/jquery-1.10.2.js"></script>
         <script>
@@ -18,20 +21,21 @@
                 $("#topmenu").load("topmenu.html");
             });
         </script>
+        <script src="js/selectlanguage.js"></script>
+        <script src="js/changePage.js" type="text/javascript"></script>
+        <script src="js/getCurrentPageName.js" type="text/javascript"></script>
     </head>
 
-    <body onload="select_language('fr')">
+    <body>
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script type="text/javascript" src="js/jquery.backstretch.min.js"></script>
         <script>
-                    $.backstretch("images/Badminton_Action.jpg");
+            $.backstretch("images/Badminton_Action.jpg");
         </script>
-
-
-        <div id="topmenu"></div>
 
         <div id='wrapper'>
             <div class='container' id='main-content'>
+                <div id="topmenu"></div>
                 <!-- Carousel -->
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
                     <!--       Indicators -->
@@ -43,12 +47,16 @@
                     <div class="carousel-inner" role="listbox">
                         <div class="item active">
                             <div class="slider-size">
-                                <img src="images/Badminton_Stub3.jpg"/>
+                                <img src="images/Badminton_Action.jpg"/>
                             </div>
                             <div class="container">
                                 <div class="carousel-caption" id="slide1">
-                                    <h3>Un club dynamique</h3>
-                                    <p><a class="btn btn-lg btn-primary" href="devenirmembre.html" role="button">Devenir membre</a></p>
+                                    <h3 lang='fr'>Un club dynamique</h3>
+                                    <h3 lang='en'>A dynamic club</h3>
+                                    <p>
+                                        <a class="btn btn-lg btn-primary" href="devenirmembre.html" role="button" lang='fr'>Devenir membre</a>
+                                        <a class="btn btn-lg btn-primary" href="devenirmembre.html" role="button" lang='en'>Join us</a>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -58,8 +66,12 @@
                             </div>
                             <div class="container">
                                 <div class="carousel-caption" id="slide2">
-                                    <h3>Intermédiaire à avancé</h3>
-                                    <p><a class="btn btn-lg btn-primary" href="devenirmembre.html" role="button">Devenir membre</a></p>
+                                    <h3 lang='fr'>Intermédiaire à avancé</h3>
+                                    <h3 lang='en'>Intermediate and advanced</h3>
+                                    <p>
+                                        <a class="btn btn-lg btn-primary" href="devenirmembre.html" role="button" lang='fr'>Devenir membre</a>
+                                        <a class="btn btn-lg btn-primary" href="devenirmembre.html" role="button" lang='en'>Join us</a>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -71,8 +83,12 @@
                             </div>
                             <div class="container">
                                 <div class="carousel-caption" id="slide3">
-                                    <h3>Une ambiance chaleureuse</h3>
-                                    <p><a class="btn btn-lg btn-primary" href="devenirmembre.html" role="button">Devenir membre</a></p>
+                                    <h3 lang='fr'>Une ambiance chaleureuse</h3>
+                                    <h3 lang='en'>A friendly atmosphere</h3>
+                                    <p>
+                                        <a class="btn btn-lg btn-primary" href="devenirmembre.html" role="button" lang='fr'>Devenir membre</a>
+                                        <a class="btn btn-lg btn-primary" href="devenirmembre.html" role="button" lang='en'>Join us</a>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -87,23 +103,54 @@
                     </a>
                 </div>
 
-
                 <!-- Marketing messaging and featurettes -->
 
                 <div class="container marketing">
-                    <h1 class="extruded">Évènements à venir</h1>
-                    <div class="row">
-                        <div class="col-lg-4">
-                            <img class="img-circle" src="images/Tournoi_Image.jpg" alt="Tournoi" width="140" height="140">
-                            <h2>Tournois ABC - Étape 7</h2>
-                            <p>L’étape #7 du tournois ABC de badminton Québec du 26-28 février 2016 (l'inscription de chaque joueur à la banque de données de badminton Québec doit être fait au plus tard le 18 février).               
-                                <a href="www.Badmintonquebec.com">www.Badmintonquebec.com</a>
-                            </p>
+                    <div lang="fr">
+                        <h1>Évènements à venir</h1>
+
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <img class="img-circle" src="images/Tournoi_Image.jpg" alt="Tournoi" width="140" height="140">
+                                <div>
+                                    <h2>Tournois ABC - Étape 7</h2>
+                                    <p>L’étape #7 du tournois ABC de badminton Québec du 26-28 février 2016 (l'inscription de chaque joueur à la banque de données de badminton Québec doit être fait au plus tard le 18 février).               
+                                        <a href="www.Badmintonquebec.com">www.Badmintonquebec.com</a>
+                                    </p>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-4">
+                                <img class="img-circle" src="images/Tournoi_Image2.jpg" alt="Generic placeholder image" width="140" height="140">
+                                <div>
+                                    <h2>Tournoi en équipe</h2>
+                                    <p>Tournoi en équipe du Club de Hull au centre sportif de Gatineau le samedi 12 mars.</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-lg-4">
-                            <img class="img-circle" src="images/Tournoi_Image2.jpg" alt="Generic placeholder image" width="140" height="140">
-                            <h2>Tournoi en équipe</h2>
-                            <p>Tournoi en équipe du Club de Hull au centre sportif de Gatineau le samedi 12 mars.</p>
+                    </div>
+                    <div class="container marketing">
+                        <div lang="en">
+                            <h1>Events to come</h1>
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img class="img-circle" src="images/Tournoi_Image.jpg" alt="Tournoi" width="140" height="140">
+                                    <div>
+                                        <h2>ABC Tournaments - 7th Step</h2>
+                                        <p>The 7th step of ABC Tournaments of Badminton Québec from February 26th-28th 2016 (each player must register to badminton Quebec's database befoe February 18th).               
+                                            <a href="www.Badmintonquebec.com">www.Badmintonquebec.com</a>
+                                        </p>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-4">
+                                    <img class="img-circle" src="images/Tournoi_Image2.jpg" alt="Generic placeholder image" width="140" height="140">
+                                    <div>
+                                        <h2>Teams tournament</h2>
+                                        <p>The teams tournament from Hull's club at Gatineau's sports center Saturday March 12th</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -122,5 +169,6 @@
                 interval: 6000 //changes the speed
             })
         </script>
+
     </body>
 </html>

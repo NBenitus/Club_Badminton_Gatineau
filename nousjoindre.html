@@ -18,64 +18,87 @@
                 $("#topmenu").load("topmenu.html");
             });
         </script>
+        <script src="js/selectlanguage.js" type="text/javascript"></script>
+        <script src="js/changePage.js" type="text/javascript"></script>
+        <script src="js/getCurrentPageName.js" type="text/javascript"></script>
     </head>
 
-    <body onload="select_language('fr')">
+<!--    <body onload="select_language('fr');">-->
+<body>
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script type="text/javascript" src="js/jquery.backstretch.min.js"></script>
         <script>
             $.backstretch("images/Badminton_Action.jpg");
         </script>
-
-        <div id="topmenu"></div>
+        
         <div id='wrapper'>
             <div class="container" id='main-content'>
+                <div id="topmenu"></div>
                 <div id='text-content'>
-                    <h1 lang="fr"> Nous joindre </h1>
-                    <h1 lang="en"> Contact Us </h1>
-                    <p lang="fr"> Pour toutes questions, vous pouvez: </p>
-                    <p lang="en"> If you have any questions, you can :</p>
-<!--<p>
-    <span lang="fr">Pour toutes questions, vous pouvez:</span><span lang="en">If you have any questions, you can :</span>
-</p>-->
-                    <table class='table-responsive'>
-                        <tr>
-                            <td>
-                                <i class="fa fa-phone" aria-hidden="true"></i> 
-                            </td>
-                            <td lang="fr"> Rejoindre John Doe au 819-000-0000. </td>
-                            <td lang="en"> Contact John Doe at 819-000-0000. </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <i class="fa fa-envelope" aria-hidden="true"></i>
-                            </td>
-                            <td lang="fr"> Nous contacter via courriel au 
-                                <a href='mailto:clubdebaddegatineau@gmail.com'>
-                                    <strong>clubdebaddegatineau@gmail.com</strong>.
-                                </a>
-                            </td>
-                                                        <td lang="en"> Send us an email at 
-                                <a href='mailto:clubdebaddegatineau@gmail.com'>
-                                    <strong>clubdebaddegatineau@gmail.com</strong>.
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <i class="fa fa-facebook" aria-hidden="true"></i>
-                            </td>
-                            <td lang="fr">
-                                Visiter notre page 
-                                <a href='https://www.facebook.com/clubdebadmintondegatineau/?fref=ts'>Facebook</a>.
-                            </td>
-                            <td lang="en">
-                                Visit our
-                                <a href='https://www.facebook.com/clubdebadmintondegatineau/?fref=ts'>Facebook</a> page.
-                            </td>
-                        </tr>
-                    </table>
+                    <div lang="fr">
+                        <h1> Nous joindre </h1>
+                        <p> Pour toutes questions, vous pouvez: </p>
+                        <table class='table-responsive'>
+                            <tr>
+                                <td>
+                                    <i class="fa fa-phone" aria-hidden="true"></i> 
+                                </td>
+                                <td> Rejoindre John Doe au 819-000-0000. </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                </td>
+                                <td lang="fr"> Nous contacter via courriel au 
+                                    <a href='mailto:clubdebaddegatineau@gmail.com'>
+                                        <strong>clubdebaddegatineau@gmail.com</strong>.
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                </td>
+                                <td lang="fr">
+                                    Visiter notre page 
+                                    <a href='https://www.facebook.com/clubdebadmintondegatineau/?fref=ts'>Facebook</a>.
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div lang="en">
+                        <h1> Contact Us </h1>
+                        <p> If you have any questions, you can :</p>
+                        <table class='table-responsive'>
+                            <tr>
+                                <td>
+                                    <i class="fa fa-phone" aria-hidden="true"></i> 
+                                </td>
+                                <td> Contact John Doe at 819-000-0000. </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                </td>
+                                <td> Send us an email at 
+                                    <a href='mailto:clubdebaddegatineau@gmail.com'>
+                                        <strong>clubdebaddegatineau@gmail.com</strong>.
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                </td>
+                                <td>
+                                    Visit our
+                                    <a href='https://www.facebook.com/clubdebadmintondegatineau/?fref=ts'>Facebook</a> page.
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
+
             </div>
         </div>
 

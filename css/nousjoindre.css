@@ -4,16 +4,14 @@ p{
 
 #text-content{
     margin-left: 50px;
+}
+
+#main-content{
     height: 100%;
 }
 
 td i{
     padding-right: 10px;
-}
-
-table {
-    margin-top: 40px;
-    margin-left: 50px;
 }
 
 td{
@@ -22,10 +20,6 @@ td{
 
 @media (max-width: 650px)
 {
-    table {
-        margin-left: 15px;
-    }
-
     #text-content{
         margin-left: 20px;
     }
