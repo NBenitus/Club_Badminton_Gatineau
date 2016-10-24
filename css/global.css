@@ -1,11 +1,112 @@
 html, body{
-    margin: 0;
-    padding: 0;
+  height: 100%;
+  margin: 0;
+}
+
+.header{
+    text-align:center;
+    background: white;
+    border-bottom: solid 8px #263E29;
+}
+
+.header img,
+.header h1{
+    display:inline;
+}
+
+.header h1{
+    margin-left: 25px;
+}
+
+body.home li.home,
+body.aboutus li.aboutus,
+body.events li.events,
+body.contactus li.contactus,
+body.home li.home:hover,
+body.aboutus li.aboutus:hover,
+body.events li.events:hover,
+body.contactus li.contactus:hover{ 
+    background-color: #337ab7;
+}
+
+body.home li.home a,
+body.aboutus li.aboutus a,
+body.events li.events a,
+body.contactus li.contactus a,
+body.home li.home a:hover,
+body.aboutus li.aboutus a:hover,
+body.events li.events a:hover,
+body.contactus li.contactus a:hover{ 
+    background-color: #337ab7;
+    color: #eee; 
+}
+
+#language{
+    text-align: right;
+    margin-right: 220px;
+    padding-top: 20px;
+}
+
+#navdiv{
+    display:inline-block;
+    text-align:center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#wrapper{
+    display: flex;
+    flex-flow: column;
     height: 100%;
 }
 
-body{
-    margin-top: 50px;
+.main-content-wrapper{
+    background: linear-gradient(303deg, #1b6753, #f0f5f4);
+    background-size: 400% 400%;
+    -webkit-animation: AnimationName 45s ease infinite;
+    -moz-animation: AnimationName 45s ease infinite;
+    -o-animation: AnimationName 45s ease infinite;
+    animation: AnimationName 45s ease infinite;
+}
+
+.no-scroll{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+.scroll{
+    flex-grow: 0;
+    flex: 1 1 auto;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:84% 0%}
+    50%{background-position:17% 100%}
+    100%{background-position:84% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:84% 0%}
+    50%{background-position:17% 100%}
+    100%{background-position:84% 0%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:84% 0%}
+    50%{background-position:17% 100%}
+    100%{background-position:84% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:84% 0%}
+    50%{background-position:17% 100%}
+    100%{background-position:84% 0%}
+}
+
+#main-content{
+    flex-grow: 1;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
 }
 
 select{
@@ -29,29 +130,13 @@ h1{
     -webkit-text-stroke-color: black;
 }
 
-/* Changing text and background color upon hover */
-.navbar-inverse .navbar-nav > .active > a:hover, 
-.navbar-inverse .navbar-nav > li > .active > a:hover,
-.navbar-inverse .navbar-nav > li > a:hover{
-    color: black;
-    background-color: white;  
-}
-
 /* Setting for the small shuttlecock picture */
-.navbar-header > img{
+#logo{
     padding-top: 10px;
     margin-left: 10px;
     margin-right: 10px;
-    height: 3em;
-    width: 3em;
-}
-
-.navbar-inverse .navbar-nav > li > a,
-.navbar-inverse .navbar-nav > .active > a,
-.navbar-inverse .navbar-nav > .active > a:focus,
-.navbar-header a.navbar-brand,
-.navbar-header a.navbar-brand:hover{
-    color: white;
+    height: 6em;
+    width: 6em;
 }
 
 #main-content{
@@ -61,7 +146,8 @@ h1{
     padding-left: 0px;
     padding-right: 0px;
     height: auto;
-    background: url(../images/texture2.png) repeat 0 0;
+    background: white;
+/*    background: url(../images/texture2.png) repeat 0 0;*/
 
 }
 

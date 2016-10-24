@@ -1,4 +1,4 @@
-<html>
+<html lang='fr'>
     <head>
         <title>Club de badminton de gatineau</title>
 
@@ -10,41 +10,35 @@
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/global.css" rel="stylesheet">
         <link href="css/nousjoindre.css" rel="stylesheet">
-        <link rel="icon" href="images/Badminton_Logo.ico">
 
         <script src="//code.jquery.com/jquery-1.10.2.js"></script>
         <script>
             $(function () {
-                $("#topmenu").load("topmenu.html");
+                $("#header_fr").load("header_fr.html");
             });
         </script>
-        <script src="js/selectlanguage.js" type="text/javascript"></script>
-        <script src="js/changePage.js" type="text/javascript"></script>
-        <script src="js/getCurrentPageName.js" type="text/javascript"></script>
     </head>
 
-<!--    <body onload="select_language('fr');">-->
-<body>
+    <!--    <body onload="select_language('fr');">-->
+    <body class='contactus'>
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script type="text/javascript" src="js/jquery.backstretch.min.js"></script>
-        <script>
-            $.backstretch("images/Badminton_Action.jpg");
-        </script>
-        
+
         <div id='wrapper'>
-            <div class="container" id='main-content'>
-                <div id="topmenu"></div>
-                <div id='text-content'>
-                    <div lang="fr">
-                        <h1> Nous joindre </h1>
-                        <p> Pour toutes questions, vous pouvez: </p>
+
+            <div id="header_fr"></div> 
+            <div class='main-content-wrapper no-scroll'>
+                <div class="container" id='main-content'>
+
+                    <div id='text-content'>
+                        <h1>Nous joindre </h1>
+                        <p>Pour toutes questions, vous pouvez: </p>
                         <table class='table-responsive'>
-                            <tr>
+<!--                            <tr>
                                 <td>
                                     <i class="fa fa-phone" aria-hidden="true"></i> 
                                 </td>
                                 <td> Rejoindre John Doe au 819-000-0000. </td>
-                            </tr>
+                            </tr>-->
                             <tr>
                                 <td>
                                     <i class="fa fa-envelope" aria-hidden="true"></i>
@@ -60,48 +54,14 @@
                                     <i class="fa fa-facebook" aria-hidden="true"></i>
                                 </td>
                                 <td lang="fr">
-                                    Visiter notre page 
-                                    <a href='https://www.facebook.com/clubdebadmintondegatineau/?fref=ts'>Facebook</a>.
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div lang="en">
-                        <h1> Contact Us </h1>
-                        <p> If you have any questions, you can :</p>
-                        <table class='table-responsive'>
-                            <tr>
-                                <td>
-                                    <i class="fa fa-phone" aria-hidden="true"></i> 
-                                </td>
-                                <td> Contact John Doe at 819-000-0000. </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <i class="fa fa-envelope" aria-hidden="true"></i>
-                                </td>
-                                <td> Send us an email at 
-                                    <a href='mailto:clubdebaddegatineau@gmail.com'>
-                                        <strong>clubdebaddegatineau@gmail.com</strong>.
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                                </td>
-                                <td>
-                                    Visit our
-                                    <a href='https://www.facebook.com/clubdebadmintondegatineau/?fref=ts'>Facebook</a> page.
+                                    <a href='https://www.facebook.com/clubdebadmintondegatineau/?fref=ts'>Visiter notre page Facebook</a>.
                                 </td>
                             </tr>
                         </table>
                     </div>
                 </div>
-
             </div>
         </div>
-
         <!--        <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>-->
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
     </body>

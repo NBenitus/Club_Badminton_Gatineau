@@ -1,0 +1,140 @@
+<html lang='fr'>
+    <head>
+        <title>Club de badminton de Gatineau</title>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" >
+        <link href="http://fonts.googleapis.com/css?family=Corben" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/global.css" rel="stylesheet">
+        <link href="css/aboutus.css" rel="stylesheet">
+
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+        <!-- API Key: AIzaSyD3ms3LBCcS51D5rT-pSaiCnrtkXXTpaIE-->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3ms3LBCcS51D5rT-pSaiCnrtkXXTpaIE">
+        </script>
+        <script>
+            function initialize() {
+
+                var myLatLng = new google.maps.LatLng(45.4931, -75.68153);
+                var mapProp = {
+                    center: myLatLng,
+                    zoom: 16,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                };
+                var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+
+                var iconBase = 'images/';
+                var marker = new google.maps.Marker({
+                    position: myLatLng,
+                    map: map,
+                    title: 'Polyvalente du Versant',
+                    icon: iconBase + 'Badminton_map_icon.png'
+                });
+            }
+            google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
+
+        <script>
+            $(function () {
+                $("#header_fr").load("header_fr.html");
+            });
+        </script>
+    </head>
+
+    <body class='aboutus'>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+        <div id='wrapper'>
+            <div id="header_fr"></div>
+
+            <div class='main-content-wrapper scroll'>
+                <div class="container" id='main-content'>
+                    <div id='text-content'>
+                        <h1>À propos</h1>
+
+                        <h3>Saison 2016 / 2017</h3>
+                        <table>
+                            <tr>
+                                <td>
+                                    <strong>Session d'automne</strong>
+                                </td>
+                                <td>
+                                    6 septembre au 12 décembre
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Session d'hiver</strong>
+                                </td>
+                                <td>
+                                    Janvier à mars (dates exactes à confirmer)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Session du printemps</strong>
+                                </td>
+                                <td>
+                                    Avril à juin (dates exactes à confirmer)
+                                </td>
+                            </tr>
+                        </table>
+
+                        <h3>Horaire </h3>
+                        <p> <strong>Mardi</strong> (9 terrains) et <strong>jeudi</strong> (6 terrains) soirs, de 19:30 à 22:00.</p>
+
+                        <h3>Coûts</h3>
+                        
+                        <table>
+                            <tr>
+                                <td>
+                                    Un soir par semaine *
+                                </td>
+                                <td>
+                                    65$
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Deux soirs par semaine
+                                </td>
+                                <td>
+                                    95$
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Invité - Un soir ***
+                                </td>
+                                <td>
+                                    10$
+                                </td>
+                            </tr>
+                        </table>
+                        
+                        <p id='reservation'>
+                            <span>* Il est à noter qu'une personne s'inscrivant pour un soir par semaine doit toujours venir le même soir (soit chaque mardi ou chaque jeudi)
+                                , pour faciliter la distribution des joueurs lors des deux soirs.</span>
+                            <br><br>
+                            <span>*** Il est important de réserver en envoyant un courriel à l'adresse suivante: 
+                                <a href="clubdebaddegatineau@gmail.com"><strong> clubdebaddegatineau@gmail.com </strong>.</a>
+                            </span>
+                        </p>       
+                        <h3>Lieu</h3>
+                        <p> École secondaire du Versant.</p>
+                        <div id='map-content'>
+                            <div id="googleMap"></div>
+                        </div>
+                        <p id='credit'> Icône fournie gracieusement par <strong><a href='https://mapicons.mapsmarker.com'>Maps Icons Collection</a></strong> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--        <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>-->
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    </body>
+</html>

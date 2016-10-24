@@ -1,8 +1,83 @@
-<script src="//code.jquery.com/jquery-1.10.2.js"></script>
-<script>
-    $(function () {
-        $("#evenements").load("evenements.html");
-    });
-</script>
-<link rel="icon" href="images/Badminton_Logo.ico">
-<div id="evenements"></div>
+<html lang='fr'>
+    <head>
+        <title>Club de badminton de gatineau</title>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" >
+        <link href="http://fonts.googleapis.com/css?family=Corben" rel="stylesheet">
+        <link href="css/global.css" rel="stylesheet">
+        <link href="css/evenements.css" rel="stylesheet">
+
+        <link rel="icon" href="images/Badminton_Logo.ico">
+
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+        <script>
+            $(function () {
+                $("#header_en").load("header_en.html");
+            });
+        </script>
+    </head>
+    <body class='events'>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+        <div id='wrapper'>
+            <div id="header_en"></div>
+            <div class='main-content-wrapper scroll'>
+                <div class='container' id='main-content'>
+                    <div class="container marketing">
+                        <h1>Events</h1>
+                        <h2>Coming soon</h2>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <img class="img-circle" src="images/Tournoi_Image.jpg" alt="Tournoi" width="140" height="140">
+                                <h3>ABC Tournaments - 7th Step</h3>
+                                <p>The 7th step of ABC Tournaments of Badminton Québec from February 26th-28th 2016 (each player must register to badminton Quebec's database before February 18th).               
+                                    <a href="www.Badmintonquebec.com">www.Badmintonquebec.com</a>
+                                </p>
+                            </div>
+                            <div class="col-lg-4">
+                                <img class="img-circle" src="images/Tournoi_Image2.jpg" alt="Generic placeholder image" width="140" height="140">
+                                <h3>Teams tournament</h3>
+                                <p>The teams tournament from Hull's club at Gatineau's sports center Saturday March 12th.</p>
+                            </div>
+                        </div>
+
+                        <hr class="featurette-divider">
+
+                        <h2>Archives</h2>
+                        <div class="row featurette">
+                            <div class="col-md-7">
+                                <h3 class="featurette-heading">ABC Tournaments - 7th Step</h3>
+                                <p>The 7th step of ABC Tournaments of Badminton Québec from February 26th-28th 2016 (each player must register to badminton Quebec's database before February 18th).               
+                                    <a href="www.Badmintonquebec.com">www.Badmintonquebec.com</a>
+                                </p>
+                            </div>
+                            <div class="col-md-5">
+                                <img class="featurette-image img-responsive center-block" src="images/Tournoi_Image.jpg" alt="Generic placeholder image">
+                            </div>
+                        </div>
+
+                        <hr class="featurette-divider">
+
+                        <div class="row featurette">
+                            <div class="col-md-7 col-md-push-5">
+                                <h3 class="featurette-heading">Teams tournament</h3>
+                                <p>The teams tournament from Hull's club at Gatineau's sports center Saturday March 12th.</p>
+                            </div>
+                            <div class="col-md-5 col-md-pull-7">
+                                <img class="featurette-image img-responsive center-block" src="images/Tournoi_Image2.jpg" alt="Generic placeholder image">
+                            </div>
+                        </div>
+
+                        <hr class="featurette-divider">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    </body>
+</html>

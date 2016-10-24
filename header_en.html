@@ -1,0 +1,42 @@
+<link rel="icon" href="images/Badminton_Logo.ico">
+<script src="js/getCurrentPageName.js" type="text/javascript"></script>
+
+<div class="header">
+    <div id='language'>
+
+        <a id='changeLanguageLink' href='accueil.html'>Français</a>
+        <script>
+            var currentPage = getCurrentPageName();
+            var link = document.getElementById('changeLanguageLink'); //or grab it by tagname etc
+            
+            console.log(currentPage);
+            
+            switch(currentPage){
+                case "home":
+                    link.href = "accueil.html"
+                break;    
+                case "aboutus":
+                    link.href = "apropos.html"
+                break;
+                case "events":
+                    link.href = "evenements.html"
+                break;
+                case "contactus":
+                    link.href = "nousjoindre.html"
+                break;
+            }
+        </script>
+    </div>
+    <div>
+        <img id='logo' src='images/Badminton_Logo.ico'>
+        <h1>Badminton club of Gatineau</h1>
+    </div>
+    <div id='navdiv'>
+        <ul class="nav nav-pills">
+            <li class="home" role="presentation"><a href="home.html">Home</a></li>
+            <li class="aboutus" role="presentation"><a href="aboutus.html">About us</a></li>
+            <li class="events" role="presentation"><a href="events.html">Events</a></li>
+            <li class="contactus" role="presentation"><a href="contactus.html">Contact us</a></li>
+        </ul>
+    </div>
+</div>

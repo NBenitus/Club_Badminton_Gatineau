@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang='fr'>
     <head>
-        <title>Club de badminton de gatineau</title>
+        <title>Club de badminton de Gatineau</title>
 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,147 +14,67 @@
         <link href="css/global.css" rel="stylesheet">
         <link href="css/accueil.css" rel="stylesheet">
 
-        <link rel="icon" href="images/Badminton_Logo.ico">
-
         <script src="//code.jquery.com/jquery-1.10.2.js"></script>
         <script>
             $(function () {
-                $("#topmenu").load("topmenu.html");
+                $("#header_fr").load("header_fr.html");
             });
         </script>
-        <script src="js/selectlanguage.js"></script>
-        <script src="js/changePage.js" type="text/javascript"></script>
-        <script src="js/getCurrentPageName.js" type="text/javascript"></script>
     </head>
 
-    <body>
+    <body class="home">
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script type="text/javascript" src="js/jquery.backstretch.min.js"></script>
-        <script>
-            $.backstretch("images/Badminton_Action.jpg");
-        </script>
-        
-        <div id="topmenu"></div>
-        
+
         <div id='wrapper'>
-            <div class="container" id="main-content">
-                
-                <!-- Carousel -->
-                <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                    <!--       Indicators -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#myCarousel" data-slide-to="1"></li>
-                        <li data-target="#myCarousel" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner" role="listbox">
-                        <div class="item active">
-                            <div class="slider-size">
-                                <img src="images/Badminton_Action.jpg"/>
-                            </div>
-                            <div class="container">
-                                <div class="carousel-caption" id="slide1">
-                                    <h3 lang='fr'>Un club dynamique</h3>
-                                    <h3 lang='en'>A dynamic club</h3>
-                                    <p>
-                                        <a class="btn btn-lg btn-primary" href="devenirmembre.html" role="button" lang='fr'>Devenir membre</a>
-                                        <a class="btn btn-lg btn-primary" href="joinus.html" role="button" lang='en'>Join us</a>
-                                    </p>
+            <div id="header_fr"></div>
+
+            <div class='main-content-wrapper no-scroll'>
+                <div class="container" id="main-content">
+                    <div id='features'>
+                        <h2>Qui sommes-nous?</h2>
+                        <ul >
+                            <li>Un club de badminton à but non lucratif, ayant plus de <b>80</b> membres actifs</li>
+                            <li>Du badminton de niveau intermédiaire à avancé, de <b>septembre</b> à <b>juin</b></li>
+                            <li>Plusieurs activités, incluant tournois et du coaching bi-mensuel par un ex champion national canadien</li>
+                        </ul>
+                    </div>
+                    <! Carousel >
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <!--Indicators-->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                        </ol>
+
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <div class="slider-size">
+                                    <img src="images/Badminton_Action.jpg" alt=""/>
                                 </div>
                             </div>
-                        </div>
-                        <div class="item">
-                            <div class="slider-size">
-                                <img src="images/Tableau.jpg"/>
-                            </div>
-                            <div class="container">
-                                <div class="carousel-caption" id="slide2">
-                                    <h3 lang='fr'>Niveau intermédiaire à avancé</h3>
-                                    <h3 lang='en'>Intermediate and advanced level</h3>
-                                    <p>
-                                        <a class="btn btn-lg btn-primary" href="devenirmembre.html" role="button" lang='fr'>Devenir membre</a>
-                                        <a class="btn btn-lg btn-primary" href="joinus.html" role="button" lang='en'>Join us</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
                             <div class="item">
                                 <div class="slider-size">
-                                    <img src="images/Groupe.jpg"/>
+                                    <img src="images/Tableau.jpg" alt=""/>
                                 </div>
                             </div>
-                            <div class="container">
-                                <div class="carousel-caption" id="slide3">
-                                    <h3 lang='fr'>Une ambiance chaleureuse</h3>
-                                    <h3 lang='en'>A friendly atmosphere</h3>
-                                    <p>
-                                        <a class="btn btn-lg btn-primary" href="devenirmembre.html" role="button" lang='fr'>Devenir membre</a>
-                                        <a class="btn btn-lg btn-primary" href="joinus.html" role="button" lang='en'>Join us</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-
-                <!-- Marketing messaging and featurettes -->
-
-                <div class="container marketing">
-                    <div lang="fr">
-                        <h1>Évènements à venir</h1>
-
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <img class="img-circle" src="images/Tournoi_Image.jpg" alt="Tournoi" width="140" height="140">
-                                <div>
-                                    <h2>Tournois ABC - Étape 7</h2>
-                                    <p>L’étape #7 du tournois ABC de badminton Québec du 26-28 février 2016 (l'inscription de chaque joueur à la banque de données de badminton Québec doit être fait au plus tard le 18 février).               
-                                        <a href="www.Badmintonquebec.com">www.Badmintonquebec.com</a>
-                                    </p>
-                                </div>
-
-                            </div>
-                            <div class="col-lg-4">
-                                <img class="img-circle" src="images/Tournoi_Image2.jpg" alt="Generic placeholder image" width="140" height="140">
-                                <div>
-                                    <h2>Tournoi en équipe</h2>
-                                    <p>Tournoi en équipe du Club de Hull au centre sportif de Gatineau le samedi 12 mars.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container marketing">
-                        <div lang="en">
-                            <h1>Events to come</h1>
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    <img class="img-circle" src="images/Tournoi_Image.jpg" alt="Tournoi" width="140" height="140">
-                                    <div>
-                                        <h2>ABC Tournaments - 7th Step</h2>
-                                        <p>The 7th step of ABC Tournaments of Badminton Québec from February 26th-28th 2016 (each player must register to badminton Quebec's database before February 18th).               
-                                            <a href="www.Badmintonquebec.com">www.Badmintonquebec.com</a>
-                                        </p>
-                                    </div>
-
-                                </div>
-                                <div class="col-lg-4">
-                                    <img class="img-circle" src="images/Tournoi_Image2.jpg" alt="Generic placeholder image" width="140" height="140">
-                                    <div>
-                                        <h2>Teams tournament</h2>
-                                        <p>The teams tournament from Hull's club at Gatineau's sports center Saturday March 12th.</p>
+                            <div class="item">
+                                <div class="item">
+                                    <div class="slider-size">
+                                        <img src="images/Groupe.jpg" alt=""/>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
+                        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -168,10 +88,9 @@
         <script type="text/javascript" src="js/carouselPlayPause.js"></script>
         <!-- Script to Activate the Carousel -->
         <script>
-            $('.carousel').carousel({
-                interval: 6000 //changes the speed
-            })
+                        $('.carousel').carousel({
+                            interval: 6000 //changes the speed
+                        })
         </script>
-
     </body>
 </html>

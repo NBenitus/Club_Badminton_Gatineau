@@ -1,16 +1,27 @@
 body{
     padding-bottom: 0px;
+    position:relative;
 }
 
-h1{
-    margin-top: 40px;
+#features{
+    margin-top: 45px;
+    margin-left: 45px;
 }
 
-#slide1,
-#slide2,
-#slide3{
-    color:yellow;
-    text-shadow: 2px 2px 2px black;
+#features li:first-child{
+    margin-top: 35px;
+}
+
+#features li{
+   margin:0 0 15px 0;   
+}
+
+#main-content{
+    height: auto;
+}
+
+#wrapper{
+    height:100vh;
 }
 
 /* Carousel properties */
@@ -27,39 +38,8 @@ h1{
 .slider-size > img{
     height: auto;
     width: 100%;
-    max-height: 500px;
 }
 
-/* Set text color in future events section */
-.container.marketing{
-    color:black;
-    padding-left: 30px;
-    width: 100%;
-}
-
-.container.marketing > h1{
-    margin-bottom: 30px;
-}
-
-@media (max-width: 415px)
-{
-    .navbar-header > img{
-        padding-top: 0px;
-        margin-left: 0px;
-        margin-right: 0px;
-        height: 0px;
-        width: 0px;
-    }
-}
-
-@media (max-width: 600px)
-{
-    .carousel-caption{
-        padding-top: 0px;
-        padding-bottom: 0px;
-        margin-left: 0px;
-        margin-right: 0px;
-        height: 0px;
-        width: 0px;
-    }
+.carousel-indicators{
+    bottom: 0px;
 }

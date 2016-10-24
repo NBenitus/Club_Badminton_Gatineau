@@ -1,0 +1,130 @@
+<html lang='en'>
+    <head>
+        <title>Badminton club of Gatineau</title>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" >
+        <link href="http://fonts.googleapis.com/css?family=Corben" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/global.css" rel="stylesheet">
+        <link href="css/aboutus.css" rel="stylesheet">
+
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyD3ms3LBCcS51D5rT-pSaiCnrtkXXTpaIE"></script>
+        <script>
+            function initialize() {
+
+                var myLatLng = new google.maps.LatLng(45.4931, -75.68153);
+                var mapProp = {
+                    center: myLatLng,
+                    zoom: 16,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                };
+                var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+
+                var iconBase = 'images/';
+                var marker = new google.maps.Marker({
+                    position: myLatLng,
+                    map: map,
+                    title: 'Polyvalente du Versant',
+                    icon: iconBase + 'Badminton_map_icon.png'
+                });
+            }
+            google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
+        <script>
+            $(function () {
+                $("#header_en").load("header_en.html");
+            });
+        </script>
+    </head>
+
+    <body class='aboutus'>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+        <div id='wrapper'>
+            <div id="header_en"></div>
+
+            <div class='main-content-wrapper scroll'>
+                <div class="container" id='main-content'>
+                    <div id='text-content'>
+                        <h1>About us</h1>
+
+                        <h3>2016/2017 season</h3>
+                        <table>
+                            <tr>
+                                <td>
+                                    <strong>Winter session</strong>
+                                </td>
+                                <td>
+                                    January 5th to March 31st
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Spring session</strong>
+                                </td>
+                                <td>
+                                    April 2nd to June 15th
+                                </td>
+                            </tr>
+                        </table>
+
+                        <h3>Schedule </h3>
+                        <p> <strong>Tuesday</strong> (9 courts) and <strong>Thursday</strong> (6 courts) evenings, 7:30PM to 10:00PM.</p>
+
+                        <h3>Costs</h3>
+<table>
+                            <tr>
+                                <td>
+                                    One evening per week *
+                                </td>
+                                <td>
+                                    65$
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Two evenings per week
+                                </td>
+                                <td>
+                                    95$
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Guest - One evening ***
+                                </td>
+                                <td>
+                                    10$
+                                </td>
+                            </tr>
+                        </table>
+                        
+                        <p id='reservation'>
+                            <span>* It is important to note that a person registering for one evening per week must always come the same day of the week 
+                                (each Tuesday or each Thursday), to facilitate the distribution of players across both days.</span>
+                            <br><br>
+                            <span>*** It is important to reserve by sending an email at 
+                            <a href="clubdebaddegatineau@gmail.com"><strong> clubdebaddegatineau@gmail.com</strong>.</a>
+                            </span>
+                        </p>       
+                        
+                        <h3>Location</h3>
+                        <p> Du Versant High school.</p>
+                        <div id='map-content'>
+                            <div id="googleMap"></div>
+                        </div>
+                        <p id='credit' lang="en"> Icon graciously provided by <strong><a href='https://mapicons.mapsmarker.com'>Maps Icons Collection</a></strong> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--        <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>-->
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    </body>
+</html>
+

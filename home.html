@@ -1,8 +1,96 @@
-<script src="//code.jquery.com/jquery-1.10.2.js"></script>
-<script>
-    $(function () {
-        $("#accueil").load("accueil.html");
-    });
-</script>
-<link rel="icon" href="images/Badminton_Logo.ico">
-<div id="accueil"></div>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Badminton club of Gatineau</title>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-theme.css" rel="stylesheet">
+        <link href="css/carousel.css" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" >
+        <link href="http://fonts.googleapis.com/css?family=Corben" rel="stylesheet">
+        <link href="css/global.css" rel="stylesheet">
+        <link href="css/accueil.css" rel="stylesheet">
+
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+        <script>
+            $(function () {
+                $("#header_en").load("header_en.html");
+            });
+        </script>
+    </head>
+
+    <body class="home">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+        <div id='wrapper'>
+            <div id="header_en"></div>
+
+            <div class='main-content-wrapper no-scroll'>
+                <div class="container" id="main-content">
+                    <div id='features'>
+                        <h2>Who are we?</h2>
+                        <ul >
+                            <li>A badminton club (not-for-profit organization) with more than <b>80</b> active members</li>
+                            <li>Badminton from intermediate to advanced skills from <b>September</b> to <b>June</b></li>
+                            <li>Many activities including tournaments and bi-monthly coaching from a former canadian national champion</li>
+                        </ul>
+                    </div>
+                    <! Carousel >
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <!--Indicators-->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                        </ol>
+
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <div class="slider-size">
+                                    <img src="images/Badminton_Action.jpg" alt=""/>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="slider-size">
+                                    <img src="images/Tableau.jpg" alt=""/>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item">
+                                    <div class="slider-size">
+                                        <img src="images/Groupe.jpg" alt=""/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--     Bootstrap core JavaScript
+        ================================================== 
+         Placed at the end of the document so the pages load faster -->
+        <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/carouselPlayPause.js"></script>
+        <!-- Script to Activate the Carousel -->
+        <script>
+                        $('.carousel').carousel({
+                            interval: 6000 //changes the speed
+                        })
+        </script>
+    </body>
+</html>
